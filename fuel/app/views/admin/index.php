@@ -11,8 +11,6 @@
 	echo "Toi la:" . $name . "<br>";
 	echo "Email $email";
 	
-	echo Form::open('admin/');
-	
 	
 ?>
 </body>

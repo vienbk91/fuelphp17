@@ -12,11 +12,21 @@ class Controller_Admin extends Controller {
 		return Response::forge($indexView);
 	}
 	
-	public function action_edit(){
+	public function action_edit() {
 		return Response::forge(View::forge('admin/edit'));
 	}
 	
-	public function action_show(){
+	public function action_show() {
 		return Response::forge(View::forge('admin/show'));
 	}
+	
+	public function action_connectdb() {
+		
+		$viewData = null;
+		$query = DB::select()->from('users');
+		$viewData = $query->execute();
+		var_dump($viewData);
+		die();
+	}
+	
 }
