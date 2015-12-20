@@ -8,7 +8,6 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-
 namespace Monolog\Formatter;
 
 /**
@@ -18,21 +17,22 @@ namespace Monolog\Formatter;
  *
  * @author Jordi Boggiano <j.boggiano@seld.be>
  */
-class JsonFormatter implements FormatterInterface
-{
-    /**
-     * {@inheritdoc}
-     */
-    public function format(array $record)
-    {
-        return json_encode($record);
-    }
-
-    /**
-     * {@inheritdoc}
-     */
-    public function formatBatch(array $records)
-    {
-        return json_encode($records);
-    }
+class JsonFormatter implements FormatterInterface {
+	/**
+	 *
+	 * {@inheritdoc}
+	 *
+	 */
+	public function format(array $record) {
+		return json_encode ( $record );
+	}
+	
+	/**
+	 *
+	 * {@inheritdoc}
+	 *
+	 */
+	public function formatBatch(array $records) {
+		return json_encode ( $records );
+	}
 }

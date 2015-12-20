@@ -18,25 +18,24 @@
  *
  * This will allow you to upgrade fuel without losing your custom config.
  */
-
-return array(
-	'csv' => array(
-		'import' => array(
-			'delimiter' => ',',
-			'enclosure' => '"',
-			'newline'   => "\n",
-			'escape'    => '"',
+return array (
+		'csv' => array (
+				'import' => array (
+						'delimiter' => ',',
+						'enclosure' => '"',
+						'newline' => "\n",
+						'escape' => '"' 
+				),
+				'export' => array (
+						'delimiter' => ',',
+						'enclosure' => '"',
+						'newline' => "\n",
+						'escape' => '"' 
+				),
+				'regex_newline' => '\n' 
 		),
-		'export' => array(
-			'delimiter' => ',',
-			'enclosure' => '"',
-			'newline'   => "\n",
-			'escape'    => '"',
-		),
-		'regex_newline'   => '\n',
-	),
-	'xml' => array(
-		'basenode' => 'xml',
-		'use_cdata' => false,
-	),
+		'xml' => array (
+				'basenode' => 'xml',
+				'use_cdata' => false 
+		) 
 );

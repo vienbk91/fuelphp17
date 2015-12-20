@@ -5,13 +5,12 @@
 <title>Admin Page</title>
 </head>
 <body>
-<p>This page uses frames. The current browser you are using does not
-	support frames.</p>
+	<p>This page uses frames. The current browser you are using does not
+		support frames.</p>
 <?php
-	echo "Toi la:" . $name . "<br>";
-	echo "Email $email";
-	
-	
+echo "Toi la:" . $name . "<br>";
+echo "Email $email";
+
 ?>
 </body>
 

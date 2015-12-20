@@ -8,18 +8,14 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-
 namespace Monolog\Handler;
 
 use Gelf\MessagePublisher;
 use Gelf\Message;
 
-class MockMessagePublisher extends MessagePublisher
-{
-    public function publish(Message $message)
-    {
-        $this->lastMessage = $message;
-    }
-
-    public $lastMessage = null;
+class MockMessagePublisher extends MessagePublisher {
+	public function publish(Message $message) {
+		$this->lastMessage = $message;
+	}
+	public $lastMessage = null;
 }
