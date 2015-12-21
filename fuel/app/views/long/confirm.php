@@ -2,19 +2,18 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=MS932">
-<title>Connect DB Test</title>
+<title>Insert title here</title>
 </head>
 <frameset>
-	<frame>
-	<frame>
-	<noframes>
-		<body>
-			<p>This page uses frames. The current browser you are using does not
-				support frames.</p>
+    <frame>
+    <frame>
+    <noframes>
+    <body>
+    <p>This page uses frames. The current browser you are using does not support frames.</p>
     <?php
-    	var_dump($userData);
+
 	?>
     </body>
-	</noframes>
+    </noframes>
 </frameset>
 </html>

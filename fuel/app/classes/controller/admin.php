@@ -18,11 +18,18 @@ class Controller_Admin extends Controller {
 		return Response::forge ( View::forge ( 'admin/show' ) );
 	}
 	public function action_connectdb() {
+		
+		$connectDB = View::forge ( 'admin/connectdb' );
+		
 		$viewData = null;
 		$query = DB::select ()->from ( 'users' );
 		$viewData = $query->execute ();
-		$viewData->set("userData" , $viewData);
-		var_dump ( $viewData );
+		
+		//$connectDB->set("userData" , $viewData["result"]);
+		
+		//return Response::forge ( $connectDB );
+		
+		var_dump(  $viewData );
 		die ();
 	}
 }
