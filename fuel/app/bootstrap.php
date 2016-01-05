@@ -1,4 +1,7 @@
 <?php
+// Set default charset
+ini_set('default_charset', 'UTF-8');
+
 
 // Load in the Autoloader
 require COREPATH . 'classes' . DIRECTORY_SEPARATOR . 'autoloader.php';
